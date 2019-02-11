@@ -30,25 +30,20 @@ bool isEven(int x)
 
 bool isPrime(int x) 
 { 
-  if (x == 0 || x == 1)
-  {
-	return false;
-  }
-  else if (x == 2 || x == 3 || x == 5 || x == 7 || x == 11)
-  {
-	return true;
-  }
- 	double arr[4] = {3.0, 5.0, 7.0, 11.0};
-  	int size = 4;
-  	int value = 0;
-  	double result, decimal = 0;
-  	for (int i = 0; i < size; i++)
-  	{
-		result = x / arr[i];
-		value = result;
-		decimal = abs(result - value);
-		if (decimal == 0)
-			return false;
-  	}
-  return true;
+	if (x <= 1)
+	{
+		return false;
+	}
+	else
+	{
+		bool result = true;
+		double r = x, root = sqrt(r);
+		for (int trial_factor = 2; result && trial_factor <= root; 
+				trial_factor++)
+		{
+			result = (x % trial_factor != 0);
+		}
+		return result;
+	}
 }
+
