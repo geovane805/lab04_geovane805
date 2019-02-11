@@ -1,6 +1,6 @@
 #include "utility.h"
 #include "tddFuncs.h"
-
+#include <cmath>
 int main() {
 
   assertEquals(true,isEven(2),"isEven(2)");
