@@ -16,7 +16,7 @@ bool isOdd(int x)
   {
   	return true;
   }
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  return false;  
 }
 
 bool isEven(int x) 
@@ -25,7 +25,7 @@ bool isEven(int x)
   {
 	return true;
   }
-  return false;  // REPLACE THIS STUB WITH REAL CODE
+  return false; 
 }
 
 bool isPrime(int x) 
