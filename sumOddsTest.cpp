@@ -4,7 +4,7 @@
 int main() 
 {
 
-  int fiveThrees[5]={3,3,3,3,3};
+  int fiveThrees[5]={3,3,3,3,3}; // initializes all elements to 3
   assertEquals(15,
 	       sumOdds(fiveThrees,5),
 	       "sumOdds(fiveThrees,5)");
@@ -15,7 +15,7 @@ int main()
 	       "sumOdds(zeros,3)" );  
 
   
-  int fiveInts[5]={15,0,5,-9,2}; 
+  int fiveInts[5]={15,0,5,-9,2}; // initialized array with neg and pos value
   assertEquals(11,
 	       sumOdds(fiveInts,5), 
 	       "sumOdds(fiveInts,5)" ); 
@@ -28,7 +28,7 @@ int main()
 	       sumOdds(fiveInts,2), 
 	       "sumOdds(fiveInts,2)" ); 
 
-  int meaning[] = {43};
+  int meaning[] = {43}; // initialized the first element to 43, the rest can/will be trailing zeros.
   assertEquals(43,
 	       sumOdds(meaning,1), 
 	       "sumOdds(meaning,1)" ); 
