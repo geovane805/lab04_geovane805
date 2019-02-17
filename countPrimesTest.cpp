@@ -15,7 +15,7 @@ int main() {
 
   
   int fiveInts[5]={2,7, 11,42, 52}; 
-  assertEquals(1,
+  assertEquals(3,
 	       countPrimes(fiveInts,5), 
 	       "countPrimes(fiveInts,5)" ); 
 
@@ -24,8 +24,8 @@ int main() {
 	       countPrimes(empty,0), 
 	       "countPrimes(empty,0)" ); 
 
-  int primes[] = {1,2,3,3,2,14,12,19,23,29};
-  assertEquals(4,
+  int primes[] = {1,2,14,15,17,12,19,23,29};
+  assertEquals(5,
 	       countPrimes(primes,10), 
 	       "countPrimes(primes,10)" ); 
 
@@ -34,8 +34,8 @@ int main() {
 	       countPrimes(meaning,1), 
 	       "countPrimes(meaning,1)" ); 
 
-  int mix[10]={ -5, 1, 3, 2, 2,2, 24, 16, 18, 22};
-  assertEquals(4,
+  int mix[10]={ -5, 1, 3,7,15,17,19,21,23,31};
+  assertEquals(6,
 	       countPrimes(mix,10), 
 	       "countPrimes(mix,10)" );
 

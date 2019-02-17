@@ -20,7 +20,7 @@ bool isEven(int x)
 
 bool isPrime(int x) 
 { 
-	if (x < 0) // if negative integer, then it is not a prime
+	if (x <= 0) // if negative integer, then it is not a prime
 	{
 		return false;
 	}
@@ -32,13 +32,12 @@ bool isPrime(int x)
 	{
 		return false;
 	}
-	int max = 252; //max value divisor will take
-	for (int divisor = 3; divisor < max; divisor++)
+	for (int divisor = 3; divisor < x / 2; divisor++)
 	{
-		// if the remainder is "0" then it is not a prime
-		if (x%divisor == 0)
+		if (x%divisor == 0) //if a "0" is found, then it isn't prime
 		{
 			return false;
+			break;
 		}
 		else
 		{
