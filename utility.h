@@ -7,6 +7,6 @@ bool isEven(int x);
 //
 //
 bool isPrime(int x);
-//
-//
+//takes an integer value x
+//x is 
 
